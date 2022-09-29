@@ -11,6 +11,9 @@ Saída
 
 Um valor real indicando o ICM da comunicação dos Palatír de Sauron e Saruman, com 2 casas decimais.
 
+
+RESOLUÇÂO
+
 entrada = input().split()
 
 distancia = int(entrada[0])
@@ -19,5 +22,66 @@ diametro2 = int(entrada[2])
 
 x = distancia/(diametro1 + diametro2)
 print(f'{x:.2f}')
+
+
+Desafio 2
+
+Em 2012 foi alcançado um novo recorde mundial na famosa Competição de Cachorros-Quentes do Nathan: o campeão, Joey Chestnut, devorou 68 cachorros-quentes em dez minutos, um aumento incrível em relação aos 62 sanduíches devorados pelo mesmo Chestnut em 2011.
+
+O restaurante Nathan’s Famous Corporation, localizado no Brooklyn, NY, é o responsável pela competição. Eles produzem deliciosos cachorros-quentes, mundialmente famosos, mas quando o assunto é matemática eles não são tão bons. Eles desejam ser listados no Livro de Recordes do Guinness, mas para isso devem preencher um formulário descrevendo os fatos básicos da competição. Em particular, eles devem informar o número médio de cachorros-quentes consumidos pelos participantes durante a competição.
+
+Você pode ajudá-los? Eles prometeram pagá-lo com um dos seus saborosos cachorros-quentes. Dados o número total de cachorros-quentes consumidos e o número total de participantes na competição, você deve escrever um programa para determinar o número médio de cachorros-quentes consumidos pelos participantes.
+Entrada
+
+A entrada consiste de uma única linha que contém dois inteiros H e P (1 ≤ H, P ≤ 1000) indicando respectivamente o número total de cachorros-quentes consumidos e o número total de participantes na competição.
+Saída
+Seu programa deve produzir uma única linha com um número racional representando o número médio de cachorros-quentes consumidos pelos participantes. O resultado deve ser escrito como um número racional com exatamente dois dígitos após o ponto decimal, arredondado se necessário.
+
+RESOLUÇÂO
+valores = input().split()
+x = int(valores[0])
+y = int(valores[1])
+
+media = float(x/y)
+print(f'{media:.2f}')
+
+
+
+Desafio
+
+Rubens quer calcular e mostrar a quantidade de litros de combustível gastos em uma viagem de carro, sendo que seu carro faz 12 KM/L. Como ele não sabe fazer um programa que o auxilie nessa missão, ele te pede ajuda. Para efetuar o cálculo, deve-se fornecer o tempo gasto em horas na viagem e a velocidade média durante a mesma em km/h. Assim, você conseguirá passar para Rubens qual a distância percorrida e, em seguida, calcular quantos litros serão necessários para a viagem que ele quer fazer. Mostre o valor com 3 casas decimais após o ponto.
+Entrada
+
+O arquivo de entrada contém dois inteiros. O primeiro é o tempo gasto na viagem em horas e o segundo é a velocidade média durante a mesma em km/h.
+Saída
+
+Imprima a quantidade de litros necessária para realizar a viagem, com três dígitos após o ponto decimal
+ 
+Exemplo de Entrada 	Exemplo de Saída
+
+10 85                 70.833
+
+Exemplo de Entrada 	Exemplo de Saída
+22 67 	              122.833
+
+
+RESOLUÇÂO
+
+valores = input().split()
+tempo = int(valores[0])
+velocidade = int(valores[1])
+distancia = tempo * velocidade
+combustivel = float(distancia/12)
+print(f'{combustivel:.3f}')
+
+
+ 
+
+
+
+
+
+
+
 
 
